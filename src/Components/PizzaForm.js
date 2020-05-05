@@ -163,7 +163,7 @@ const PizzaForm = () => {
                         <label htmlFor="Name for Order">
                             <h4>Customer Name</h4> 
                             <input
-                            data-cy= "nameArea"
+                            data-cy= "name"
                             name="name"
                             type="text"
                             value={formValues.name}
@@ -178,7 +178,7 @@ const PizzaForm = () => {
                         <Col>
                             <label htmlFor="size choice">
                                  <h4>Choose Your Size</h4>
-                                <select name="size" data-cy="size" onChange={inputChange} >
+                                <select id='sizes' name="size" data-cy="size" onChange={inputChange} >
                                 <option value="select">Select</option>
                                 <option value="personal">Personal</option>
                                 <option value="medium">Medium</option>
@@ -192,7 +192,7 @@ const PizzaForm = () => {
                         <Col>
                             <label htmlFor="sauce choice">
                                 <h4>Choose Your Sauce</h4>
-                                <select name="sauce" data-cy="sauce" onChange={inputChange}>
+                                <select id="sauce" name="sauce" data-cy="sauce" onChange={inputChange}>
                                 <option value="select">Select</option>
                                 <option value="original-red">Original</option>
                                 <option value="garglic-ranch">Garlic Ranch</option>
@@ -414,39 +414,6 @@ const PizzaForm = () => {
         </label>
                         </Col>
                     </Row>
-
-                
-       
-
-            
-        
-        
-         
-       
-
-      
-
-       
-
-       
-
-      
-
-     
-        
-
-    
-
-     
-
-     
-
-        
-
-
-    
-
-        
 
             <label htmlFor="special instructions">
                 <h4>Special Instructions</h4>
